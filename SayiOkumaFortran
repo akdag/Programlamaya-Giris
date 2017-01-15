@@ -1,0 +1,11 @@
+
+program SayiOkuma
+ implicit none
+ integer:: int
+
+ write(*,*) "Sayi gir:"
+ read(*,*) int
+
+ write(*,*) "Girilen Sayi:" int
+
+end program SayiOkuma
