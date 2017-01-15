@@ -1,0 +1,9 @@
+program merhaba
+ implicit none
+ character(len=30)::msg
+
+ msg="Merhaba Dunya"
+
+ write(*,*) msg
+
+end program merhaba
