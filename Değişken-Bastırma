@@ -1,0 +1,9 @@
+program DegiskenBastir
+ implicit none
+ integer:: int
+
+ int=5
+
+ write(*,*) int
+
+end program DegiskenBastir
