@@ -1,0 +1,30 @@
+program fact_hesap
+implicit none
+ integer*4::n
+ real*8::fact
+
+  10 write(*,*) "factoryel: sayi giriniz"
+   read(*,*) n
+
+   write(*,*) fact(n)
+    goto 10
+  end program fact_hesap
+
+real*8 function fact(n)
+implicit none
+  integer*4,intent(inout)::n
+  integer::i
+
+   fact=1.0
+  if(n==0)then 
+        fact=1.0
+  elseif(n<=0)then
+        write(*,*) "yanlızca pozitif tamsayı"
+  elseif(n>=171)then
+        write(*,*) "tanimsiz"
+  elseif(n>0)then
+        do i=1,n
+          fact=fact*i
+        end do
+  end if 
+ end function fact
