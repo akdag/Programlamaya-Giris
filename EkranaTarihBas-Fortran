@@ -1,0 +1,10 @@
+
+program EkranaTarihBas
+ implicit none
+  character(len=8)  :: tarih
+  character(len=10) :: zaman
+  call date_and_time(DATE=tarih)
+  call date_and_time(TIME=zaman)
+  write(*,*) tarih
+  write(*,*) zaman
+end program EkranaTarihBas
